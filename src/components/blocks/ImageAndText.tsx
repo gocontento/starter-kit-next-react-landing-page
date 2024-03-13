@@ -28,12 +28,14 @@ function HorizontalImageAndText({ block }: { block: BlockData }) {
   )
   return (
     <div className="py-9 md:py-16">
-      <div className="grid items-center space-y-6 md:grid-cols-2 md:space-x-12">
+      <div className="grid items-center gap-y-6 md:grid-cols-2 md:space-x-12">
         {block.fields.image_side.selected_option.value === 'left' && (
           <>{image}</>
         )}
-        <div className="prose">
-          <h2 className="text-3xl font-semibold">{block.fields.title.text}</h2>
+        <div className="prose order-first md:order-none">
+          <h2 className="text-3xl font-semibold leading-snug ">
+            {block.fields.title.text}
+          </h2>
           <div
             dangerouslySetInnerHTML={{ __html: block.fields.text.text }}
             className="text-lg"
@@ -61,9 +63,9 @@ function HorizontalImageAndText({ block }: { block: BlockData }) {
 function VerticalImageAndText({ block }: { block: BlockData }) {
   return (
     <div className="py-9 md:py-16">
-      <div className="flex flex-col items-center justify-center space-y-12">
+      <div className="flex flex-col items-center justify-center gap-y-6 md:space-y-12">
         <div className="prose">
-          <h2 className="text-3xl font-semibold leading-tight md:text-center md:text-5xl">
+          <h2 className="text-3xl font-semibold leading-snug md:text-center md:text-5xl">
             {block.fields.title.text}
           </h2>
           <div
