@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Pricing({ block }: { block: BlockData }) {
   return (
-    <div className="space-y-12 py-9 md:space-y-16 md:py-16">
+    <div className="space-y-12 py-9 md:py-16 lg:space-y-16">
       <div className="prose mx-auto">
         <h2 className="text-3xl font-semibold md:text-center md:text-5xl">
           {block.fields.title.text}
@@ -12,7 +12,7 @@ export default function Pricing({ block }: { block: BlockData }) {
           <p className="text-lg md:text-center">{block.fields.text.text}</p>
         )}
       </div>
-      <div className="grid max-w-none space-y-4 md:grid-cols-3 md:space-x-6 md:space-y-0">
+      <div className="grid space-y-4 md:mx-auto md:max-w-md lg:max-w-none lg:grid-cols-3 lg:space-x-6 lg:space-y-0">
         {block.fields.pricing_blocks.blocks.map((price_block: BlockData) => (
           <div
             key={price_block.fields.subtitle.text}
@@ -21,7 +21,7 @@ export default function Pricing({ block }: { block: BlockData }) {
             <h3 className="text-center text-lg font-semibold">
               {price_block.fields.subtitle.text}
             </h3>
-            <div className="text-center text-6xl font-semibold">
+            <div className="text-center text-5xl font-semibold lg:text-6xl">
               {price_block.fields.price_annually.text}
             </div>
             <p className="text-md text-center">

@@ -7,8 +7,8 @@ import ThreeColumnGrid from './blocks/ThreeColumnGrid'
 import LongText from './blocks/LongText'
 import ImageAndText from './blocks/ImageAndText'
 import ImageBlock from './blocks/ImageBlock'
-import VerticalTextAndImage from './blocks/VerticalTextAndImage'
 import Pricing from './blocks/Pricing'
+import Logos from './blocks/Logos'
 
 export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
   const id = useId()
@@ -32,6 +32,9 @@ export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
 
       case 'pricing':
         return <Pricing key={id + '-' + index} block={block} />
+
+      case 'logos':
+        return <Logos key={id + '-' + index} block={block} />
 
       default:
         return (

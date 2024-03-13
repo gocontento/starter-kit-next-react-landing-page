@@ -33,7 +33,7 @@ function HorizontalImageAndText({ block }: { block: BlockData }) {
           <>{image}</>
         )}
         <div className="prose order-first md:order-none">
-          <h2 className="text-3xl font-semibold leading-snug ">
+          <h2 className="text-3xl font-semibold leading-snug">
             {block.fields.title.text}
           </h2>
           <div
