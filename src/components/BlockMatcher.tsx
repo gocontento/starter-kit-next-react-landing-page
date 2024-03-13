@@ -9,6 +9,7 @@ import ImageAndText from './blocks/ImageAndText'
 import ImageBlock from './blocks/ImageBlock'
 import Pricing from './blocks/Pricing'
 import Logos from './blocks/Logos'
+import Stats from './blocks/Stats'
 
 export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
   const id = useId()
@@ -35,6 +36,9 @@ export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
 
       case 'logos':
         return <Logos key={id + '-' + index} block={block} />
+
+      case 'stats':
+        return <Stats key={id + '-' + index} block={block} />
 
       default:
         return (
