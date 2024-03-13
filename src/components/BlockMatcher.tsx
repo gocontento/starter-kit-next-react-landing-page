@@ -30,9 +30,6 @@ export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
       case 'image':
         return <ImageBlock key={id + '-' + index} block={block} />
 
-      case 'vertical_text_and_image':
-        return <VerticalTextAndImage key={id + '-' + index} block={block} />
-
       case 'pricing':
         return <Pricing key={id + '-' + index} block={block} />
 
