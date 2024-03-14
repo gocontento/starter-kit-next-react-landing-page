@@ -12,6 +12,7 @@ import Logos from './blocks/Logos'
 import Stats from './blocks/Stats'
 import Testimonials from './blocks/Testimonials'
 import FAQs from './blocks/FAQs'
+import CTA from './blocks/CTA'
 
 export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
   const id = useId()
@@ -47,6 +48,9 @@ export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
 
       case 'faqs':
         return <FAQs key={id + '-' + index} block={block} />
+
+      case 'cta':
+        return <CTA key={id + '-' + index} block={block} />
 
       default:
         return (
