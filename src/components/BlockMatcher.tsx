@@ -14,6 +14,7 @@ import Testimonials from './blocks/Testimonials'
 import FAQs from './blocks/FAQs'
 import CTA from './blocks/CTA'
 import NewsletterForm from './blocks/NewsletterForm'
+import ContactForm from './blocks/ContactForm'
 
 export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
   const id = useId()
@@ -55,6 +56,9 @@ export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
 
       case 'newsletter_form':
         return <NewsletterForm key={id + '-' + index} block={block} />
+
+      case 'contact_form':
+        return <ContactForm key={id + '-' + index} block={block} />
 
       default:
         return (
