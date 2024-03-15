@@ -4,7 +4,7 @@ import { useId } from 'react'
 import { BlockData } from '@gocontento/client'
 import Hero from './blocks/Hero'
 import ThreeColumnGrid from './blocks/ThreeColumnGrid'
-import LongText from './blocks/LongText'
+import Text from './blocks/Text'
 import ImageAndText from './blocks/ImageAndText'
 import ImageBlock from './blocks/ImageBlock'
 import Pricing from './blocks/Pricing'
@@ -27,8 +27,8 @@ export default function BlockMatcher({ blocks }: { blocks: BlockData[] }) {
       case 'three_column_grid':
         return <ThreeColumnGrid key={id + '-' + index} block={block} />
 
-      case 'long_text':
-        return <LongText key={id + '-' + index} block={block} />
+      case 'text':
+        return <Text key={id + '-' + index} block={block} />
 
       case 'image_and_text':
         return <ImageAndText key={id + '-' + index} block={block} />
