@@ -15,17 +15,18 @@ export default function ImageAndText({ block }: { block: BlockData }) {
 }
 
 function HorizontalImageAndText({ block }: { block: BlockData }) {
-  const image = (
-    <div>
-      <Image
-        src={block.fields.image.assets[0].asset.url}
-        alt={block.fields.image.assets[0].asset.description}
-        className="h-full w-full object-cover"
-        width={176}
-        height={176}
-      />
-    </div>
-  )
+  const image =
+    block.fields.image.assets.length > 0 ? (
+      <div>
+        <Image
+          src={block.fields.image.assets[0].asset.url}
+          alt={block.fields.image.assets[0].asset.description}
+          className="h-full w-full object-cover"
+          width={176}
+          height={176}
+        />
+      </div>
+    ) : null
   return (
     <div className="py-9 md:py-16">
       <div className="grid items-center gap-y-6 md:grid-cols-2 md:space-x-12">
@@ -84,15 +85,17 @@ function VerticalImageAndText({ block }: { block: BlockData }) {
               })}
           </div>
         </div>
-        <div>
-          <Image
-            src={block.fields.image.assets[0].asset.url}
-            alt={block.fields.image.assets[0].asset.description}
-            className="object-cover"
-            width={1000}
-            height={800}
-          />
-        </div>
+        {block.fields.image.assets.length > 0 && (
+          <div>
+            <Image
+              src={block.fields.image.assets[0].asset.url}
+              alt={block.fields.image.assets[0].asset.description}
+              className="h-full w-full object-cover"
+              width={750}
+              height={600}
+            />
+          </div>
+        )}
       </div>
     </div>
   )

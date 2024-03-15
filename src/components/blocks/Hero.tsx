@@ -21,15 +21,17 @@ export default function Hero({ block }: { block: BlockData }) {
               )
             })}
         </div>
-        <div>
-          <Image
-            src={block.fields.image.assets[0].asset.url}
-            alt={block.fields.image.assets[0].asset.description}
-            className="h-full w-full object-cover"
-            width={750}
-            height={600}
-          />
-        </div>
+        {block.fields.image.assets.length > 0 && (
+          <div>
+            <Image
+              src={block.fields.image.assets[0].asset.url}
+              alt={block.fields.image.assets[0].asset.description}
+              className="h-full w-full object-cover"
+              width={750}
+              height={600}
+            />
+          </div>
+        )}
       </div>
     </div>
   )
