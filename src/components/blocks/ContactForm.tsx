@@ -1,6 +1,6 @@
 import { BlockData } from '@gocontento/client'
 
-export default function NewsletterForm({ block }: { block: BlockData }) {
+export default function ContactForm({ block }: { block: BlockData }) {
   return (
     <div className="py-9 md:py-16">
       <div className="flex flex-col items-center justify-center gap-y-6 md:space-y-12">
