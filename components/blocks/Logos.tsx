@@ -9,8 +9,8 @@ export default function Logos({ block }: { block: BlockData }) {
         <h3 className="text-lg md:text-center">{block.fields.subtitle.text}</h3>
       )}
       <div className="mx-auto my-9 grid max-w-[1000px] grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-3 md:gap-x-12 md:gap-y-6 lg:grid-cols-6">
-        {block.fields.logos.blocks.map((block: BlockData) => (
-          <Link href={block.fields.url.text}>
+        {block.fields.logos.blocks.map((block: BlockData, index: number) => (
+          <Link href={block.fields.url.text} key={`logo-block-${index}`}>
             <Image
               src={block.fields.logo.assets[0].asset.url}
               alt={block.fields.logo.assets[0].asset.description}
