@@ -1,8 +1,8 @@
-## Welcome to the Minimal Starter Kit for Contento
+## Welcome to the Landing Page Starter Kit for Contento
 
-This is a minimal starter kit that has a page builder template, header and footer navs and a basic collection of
-composable content blocks. It’s designed to get you started using Contento, and is built with a familiar and popular
-tech stack ([Next.js](https://nextjs.org) & [Tailwind CSS](https://tailwindcss.com)).
+This starter kit has a page builder template, header and footer navs and a set of additional composable content blocks
+perfect for building landing pages. It’s designed to get you started using Contento, and is built with a familiar and
+popular tech stack ([Next.js](https://nextjs.org) & [Tailwind CSS](https://tailwindcss.com)).
 
 ## Getting Started
 
