@@ -1,6 +1,6 @@
-import { ContentLinkData } from "@gocontento/client";
+import { ContentLinkData } from '@gocontento/client'
 
 export type ContentLinks = {
-    sort: number;
-    content_link: ContentLinkData;
-  }
+  sort: number
+  content_link: ContentLinkData
+}

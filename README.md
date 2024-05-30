@@ -4,7 +4,6 @@ This is a minimal starter kit that has a page builder template, header and foote
 composable content blocks. It’s designed to get you started using Contento, and is built with a familiar and popular
 tech stack ([Next.js](https://nextjs.org) & [Tailwind CSS](https://tailwindcss.com)).
 
-
 ## Getting Started
 
 First, install all the required dependencies:
@@ -33,7 +32,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
 ## Deploy on Vercel
 
 The easiest way to deploy this repo is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
@@ -41,7 +39,6 @@ The easiest way to deploy this repo is to use the [Vercel Platform](https://verc
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 Once deployed, make sure to update the domain name in your [Site Settings](https://app.contento.io/settings).
-
 
 ## Visual Preview
 
@@ -54,7 +51,6 @@ settings to use `http://localhost:3000` for the preview URL.
 
 Once you have your site deployed however you will want to change this to your production domain so that your content
 editors can use it.
-
 
 ## Learn More
 
