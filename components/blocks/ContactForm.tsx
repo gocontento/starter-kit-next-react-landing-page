@@ -37,7 +37,7 @@ export default function ContactForm({ block }: { block: BlockData }) {
               </div>
             </div>
             <div className="w-full">
-              <label className="mb-1 block font-semibold" htmlFor="email">
+              <label className="mb-1 block font-semibold" htmlFor="message">
                 Message
               </label>
               <textarea
