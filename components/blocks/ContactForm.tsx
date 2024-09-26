@@ -16,33 +16,42 @@ export default function ContactForm({ block }: { block: BlockData }) {
           <form className="mx-auto my-10 flex flex-col justify-center gap-x-9 gap-y-3">
             <div className="flex flex-col gap-x-9 gap-x-9 gap-y-3 md:flex-row">
               <div className="w-full">
-                <label className="mb-1 block font-semibold" htmlFor="full-name">
+                <label
+                  className="mb-1 block font-semibold"
+                  htmlFor="contact-full-name"
+                >
                   Full Name
                 </label>
                 <input
                   className="w-full border-2 border-gray-200 bg-gray-200 px-4 py-2"
-                  id="full-name"
+                  id="contact-full-name"
                   type="text"
                 />
               </div>
               <div className="w-full">
-                <label className="mb-1 block font-semibold" htmlFor="email">
+                <label
+                  className="mb-1 block font-semibold"
+                  htmlFor="contact-email"
+                >
                   Email
                 </label>
                 <input
                   className="w-full border-2 border-gray-200 bg-gray-200 px-4 py-2"
-                  id="email"
+                  id="contact-email"
                   type="email"
                 />
               </div>
             </div>
             <div className="w-full">
-              <label className="mb-1 block font-semibold" htmlFor="message">
+              <label
+                className="mb-1 block font-semibold"
+                htmlFor="contact-message"
+              >
                 Message
               </label>
               <textarea
                 className="min-h-[200px] w-full border-2 border-gray-200 bg-gray-200 px-4 py-2"
-                id="message"
+                id="contact-message"
               />
             </div>
             <div className="mt-4 flex flex-shrink-0 md:mt-8">
