@@ -22,7 +22,7 @@ export default function Pricing({ block }: { block: BlockData }) {
               {price_block.fields.subtitle.text}
             </h3>
             <div className="text-center text-5xl font-semibold lg:text-6xl">
-              {price_block.fields.price_annually.text}
+              {price_block.fields.price.text}
             </div>
             <p className="text-md text-center">
               {price_block.fields.text.text}
