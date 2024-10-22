@@ -3,7 +3,6 @@ import { createClient } from '@/lib/contento'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Inter } from 'next/font/google'
-import { notFound } from 'next/navigation'
 
 const InterFont = Inter({
   variable: '--font-inter',
@@ -20,28 +19,20 @@ export default async function RootLayout({
   const mainNavId = process.env.SITE_MAIN_NAV_ID ?? false
   const footerNavId = process.env.SITE_FOOTER_NAV_ID ?? false
 
-  if (!mainNavId) {
-    throw new Error(
-      'No main nav found. Please ensure you have created one in Contento and copied the ID to your .env file.',
-    )
-  }
-
-  if (!footerNavId) {
-    throw new Error(
-      'No footer nav found. Please ensure you have created one in Contento and copied the ID to your .env file.',
-    )
-  }
-
   const mainNav = await createClient()
     .getContentById(mainNavId)
     .catch(() => {
-      notFound()
+      throw new Error(
+        'No main nav found. Please ensure you have created one in Contento and copied the ID to your .env file.',
+      )
     })
 
   const footerNav = await createClient()
     .getContentById(footerNavId)
     .catch(() => {
-      notFound()
+      throw new Error(
+        'No footer nav found. Please ensure you have created one in Contento and copied the ID to your .env file.',
+      )
     })
 
   return (
