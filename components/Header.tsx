@@ -1,23 +1,12 @@
 'use client'
 
 import { BlockData, ContentData } from '@gocontento/client'
-import ContentoLogo from '@/images/ContentoLogo'
+import Logo from '@/images/Logo'
 import Link from 'next/link'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
 import { usePathname } from 'next/navigation'
 import { classNames } from '@/utils/ClassNames'
-
-function Logo() {
-  return (
-    <Link
-      href="/"
-      className="inline-block w-[128px] hover:opacity-80 lg:-mt-2.5 lg:w-[180px]"
-    >
-      <ContentoLogo className="h-auto w-full" />
-    </Link>
-  )
-}
 
 export default function Header({ mainNav }: { mainNav: ContentData }) {
   const pathName = usePathname()
@@ -30,7 +19,12 @@ export default function Header({ mainNav }: { mainNav: ContentData }) {
             <div className="flex h-20 items-center justify-between">
               {/* Logo */}
               <div className="flex flex-shrink-0 items-center">
-                <Logo />
+                <Link
+                  href="/"
+                  className="inline-block w-[100px] hover:opacity-80 lg:w-[120px]"
+                >
+                  <Logo className="h-auto w-full" />
+                </Link>
               </div>
               <div>
                 {/* Desktop Nav */}
