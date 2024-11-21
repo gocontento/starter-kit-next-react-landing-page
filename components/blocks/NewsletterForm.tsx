@@ -5,7 +5,7 @@ export default function NewsletterForm({ block }: { block: BlockData }) {
     <div className="py-9 md:py-16">
       <div className="flex flex-col items-center justify-center gap-y-6 md:space-y-12">
         <div className="prose">
-          <h2 className="text-3xl font-semibold leading-snug md:text-center md:text-5xl">
+          <h2 className="text-3xl font-semibold leading-snug tracking-tight md:text-center md:text-5xl">
             {block.fields.title.text}
           </h2>
           <div

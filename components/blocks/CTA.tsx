@@ -6,7 +6,7 @@ export default function CTA({ block }: { block: BlockData }) {
     <div className="py-9 md:py-16">
       <div className="mx-auto max-w-[1000px] bg-zinc-100 px-6 py-24 md:px-16">
         <div className="prose mx-auto flex flex-col items-center justify-center">
-          <h2 className="mt-5 text-center text-3xl font-semibold leading-snug md:text-5xl">
+          <h2 className="mt-5 text-center text-3xl font-semibold leading-snug tracking-tight md:text-5xl">
             {block.fields.title.text}
           </h2>
           <p className="text-center text-lg">{block.fields.text.text}</p>

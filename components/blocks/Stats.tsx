@@ -4,7 +4,7 @@ export default function Stats({ block }: { block: BlockData }) {
   return (
     <div className="py-9 md:py-16">
       {block.fields.title.text && (
-        <h2 className="text-lg md:text-center">{block.fields.title.text}</h2>
+        <h2 className="text-lg tracking-tight md:text-center">{block.fields.title.text}</h2>
       )}
       <div className="mx-auto my-9 grid max-w-[1000px] gap-y-12 bg-zinc-100 py-9 md:grid-cols-3">
         {block.fields.stat_blocks.blocks.map(

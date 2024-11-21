@@ -5,7 +5,7 @@ export default function Pricing({ block }: { block: BlockData }) {
   return (
     <div className="space-y-12 py-9 md:py-16 lg:space-y-16">
       <div className="prose mx-auto">
-        <h2 className="text-3xl font-semibold md:text-center md:text-5xl">
+        <h2 className="text-3xl font-semibold tracking-tight md:text-center md:text-5xl">
           {block.fields.title.text}
         </h2>
         {block.fields.text.text && (

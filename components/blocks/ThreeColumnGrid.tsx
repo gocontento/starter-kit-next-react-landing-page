@@ -5,7 +5,7 @@ export default function ThreeColumnGrid({ block }: { block: BlockData }) {
   return (
     <div className="py-9 md:py-16">
       <div className="prose">
-        <h2 className="mb-5 text-3xl font-semibold">
+        <h2 className="mb-5 text-3xl font-semibold tracking-tight">
           {block.fields.title.text}
         </h2>
         {block.fields.text.text && (

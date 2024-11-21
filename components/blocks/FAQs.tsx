@@ -7,7 +7,7 @@ export default function FAQs({ block }: { block: BlockData }) {
   return (
     <div className="py-9 md:py-16">
       <div className="prose mx-auto">
-        <h2 className="text-center text-3xl font-semibold md:text-5xl">
+        <h2 className="text-center text-3xl font-semibold tracking-tight md:text-5xl">
           {block.fields.title.text}
         </h2>
         <p className="text-center">{block.fields.text?.text}</p>
